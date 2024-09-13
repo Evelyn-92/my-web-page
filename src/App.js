@@ -1,10 +1,23 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import {Home} from './home.jsx';
+import {NavBar} from './navBar.jsx';
+import { Interests } from './interests.jsx';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <Router>
+          <NavBar />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/Interests' element={<Interests />} />
+            
+          </Routes>
+      </Router>
+      
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> learn react. 
@@ -16,18 +29,22 @@ function App() {
           rel="noopener noreferrer">
           Learn React
         </a>
-      </header>
+        
+      </header> */}
       
-      <body className="App-header">
-        <ul>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Skills</li>
-          <li>Work</li>
-          <li>Contact</li>
-        </ul>
-        <p>Hello, I'm Evelyn, a Software Developer.</p>
-        <p>I am a highly creative individual with a passion for continuous learning.
+      {/* <body className="App-header">
+        
+        <nav>
+          <ul className="App-navigation-ul">
+            <li><a href = '#Contact'>Contact</a></li>
+            <li><a href = '#Interests'>Interests</a></li>
+            <li><a href = '#Skills'>Skills</a></li>
+            <li><a href = '#Projects'>Projects</a></li>
+            <li><a href = '#Experience'>Experience</a></li>
+          </ul>
+        </nav> */}
+        {/* <p>Hello, I'm Evelyn, a Software Developer.</p>
+        <p className="cursive">I am a highly creative individual with a passion for continuous learning.
           I embrace challenges as opportunities to expand my knowledge and develop innovative solutions.
           I possess strong interpersonal skills, fostering a cooperative and approachable demeanor. 
           I am equally adept at navigating social settings and maintaining professionalism.
@@ -35,6 +52,32 @@ function App() {
           This allows me to approach projects with clarity, focus, and sustained energy.
           Some of my interests include:
         </p>
+      </body> */}
+
+      {/* <body className="App-header">
+        <p><a href name = 'Contact'> Contact </a></p>
+        <p> IMAGE OF ME </p>
+        <p className="cursive"> "Everything comes to an end, even poverty." </p>
+        <p> banda.ev@gmail.com </p>
+        <p> 0744172614 </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer">
+         LinkedIn
+        </a>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer">
+          GitHub
+        </a>
+      </body> */}
+
+      {/* <body className="App-header">
+        <p><a href name = 'Interests'> Interests </a></p>
         <ul>
           <li>SELF-CARE</li>
           <li>CODING</li>
@@ -42,10 +85,41 @@ function App() {
           <li>MUSIC</li>
           <li>SOCIALS</li>
           <li>ANIMALS</li>
-        </ul>
-      </body>
+        </ul>   
+      </body> */}
 
-      <body className="App-header">
+      {/* <body className="App-header">
+        <p><a href name = 'Skills'>Skills</a></p>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JAVASCRIPT</li>
+          <li>REACT</li>
+          <li>NODEJS</li>
+          <li>EXPRESSJS</li>
+          <li>MONGODB</li>
+          <li>UI/UX</li>
+          <li>CANVA</li>
+          <li>MYSQL</li>
+          <li>GITHUB</li>
+          <li>DOCKER/KUBENETES</li>
+          <li>RESTFULAPI</li>
+          <li>TYPESCRIPT</li>
+          <li>REQUIREMENT GATHERING</li>
+          <li>CRITICAL THINKING</li>
+          <li>MERN</li>
+          <li>VSCODE</li>
+          <li>SDLC / AGILE METHODOOGIES</li>
+          <li>DETAIL ORIENTATED</li>
+          <li>COMMUNICATION</li>
+          <li>STRESS MANAGEMENT</li>
+        </ul>
+        <p> Tech stack used for this webpage:</p>
+        <p> HTML CSS JAVASCRIPT REACT GITHUB VISUAL STUDIO CODE:</p>
+      </body> */}
+
+      {/* <body className="App-header">
+        <p><a href name= 'Projects'>Project</a></p>
         <p>
           Online Clothing Store: The online clothing store is a fullstack project that I completed. 
           The store is interactive whereby users can browse or create accounts. 
@@ -58,10 +132,10 @@ function App() {
           rel="noopener noreferrer">
           Online-Store
         </a>    
-      </body>
+      </body> */}
 
-      <body className="App-header">
-        <p> work experience </p>
+      {/* <body className="App-header">
+        <p><a href name = 'Experience'> Experience </a></p>
         <p>
           FullStack Developer | Freelance | Fourways | Dec 2023 - Present
           Software Development: Developed an online store for women called 'Ray'. 
@@ -123,58 +197,7 @@ function App() {
           detail and organizational abilities to ensure accuracy and efficiency in document management 
           tasks.
         </p>
-      </body>
-
-      <body className="App-header">
-        <p> Skills </p>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JAVASCRIPT</li>
-          <li>REACT</li>
-          <li>NODEJS/EXPRESSJS</li>
-          <li>MONGODB</li>
-          <li>UI/UX</li>
-          <li>MYSQL</li>
-          <li>GITHUB</li>
-          <li>DOCKER/KUBENETES</li>
-          <li>RESTFULAPI</li>
-          <li>TYPESCRIPT</li>
-          <li>REQUIREMENT GATHERING</li>
-          <li>CRITICAL THINKING</li>
-          <li>MERN</li>
-          <li>VSCODE</li>
-          <li>SDLC / AGILE METHODOOGIES</li>
-          <li>DETAIL ORIENTATED</li>
-          <li>COMMUNICATION</li>
-          <li>STRESS MANAGEMENT</li>
-        </ul>
-      </body>
-
-      <body className="App-header">
-        <p> Contact </p>
-        <p> IMAGE OF ME </p>
-        <p> "Everything comes to an end, even poverty." - Evelyn </p>
-        <p> banda.ev@gmail.com </p>
-        <p> 0744172614 </p>
-
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer">
-         LinkedIn
-        </a>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer">
-          GitHub
-        </a>
-       
-      </body>
-
+      </body> */}
     </div>
   );
 }

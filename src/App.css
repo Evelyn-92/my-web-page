@@ -1,31 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --green-color: green;
+  --orange-color: orange;
+  --lightBlue-color: blue;
+  --whiteColor: white;
+  --yellowGreen-color: lime;
+  --box-shadow: 0 0 1.5rem rgba(0 0 0 / 0.1);
+
+}
+
+body {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover,
+a.active {
+  color: var(--orange-color);
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 1.5rem;
+  margin-inline: auto;
+}
+
+nav {
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 0;
+  background-color: var(--whiteColor);
+  box-shadow: var(--box-shadow);
+  transition: padding .3s ease-in-out;
+}
+
+nav.scrolled {
+  padding: 2rem 0;
+}
+
+nav .container .row {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+}
+
+nav .container .row .evelyn {
+  font-size: 2rem;
+}
+
+nav .container .row .menu-bar {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+nav .container .row .menu-bar li a {
+  text-transform: capitalize;
+  font-size: 1.8rem;
+}
+
+section {
+  padding: 12rem 0;
+  text-align: center;
+  font-size: 5rem;
+  text-transform: uppercase;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--whiteColor);
+}
+
+#evelyn {
+  height: calc(100vh - 6rem);
+  background-color: var(--lightBlue-color);
+}
+
+#contact {
+  background-color: var(--orange-color);
+}
+
+#interests {
+  background-color: var(--yellowGreen-color);
+}
+
+#skills {
+  background-color: var(--green-color);
+}
+
+#projects {
+  background-color: var(--yellowGreen-color);
+}
+
+#experience {
+  background-color: var(--orange-color);
+}
+
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+} */
+
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+} */
+
+/* .cedarville-cursive-regular {
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #ffffff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
-}
+  color: rgb(0, 0, 0);
+} */
 
-.App-link {
-  color: #61dafb;
+/* .App-link {
+  color: #695139;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +162,35 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+/* .App-navigation-ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+/* a:hover{
+  color: rgb(245, 245, 245);
+  transition: color 0.3s ease-in-out;
+  box-shadow: green;
 }
+
+a.active {
+  color: rgb(212, 214, 214);
+} */
+
+/* .App-navigation-ul a {
+  color: rgb(115, 117, 115);
+  text-decoration: none;
+}
+
+.cursive {
+  font-family: "Cedarville Cursive", system-ui;
+  font-weight: 400;
+  font-style: normal;
+} */
