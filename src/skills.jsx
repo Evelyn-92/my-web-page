@@ -1,5 +1,5 @@
 import React from "react";
 
 export const Skills = () => {
-  return (<section id ="skills">skills</section>)
+  return (<section id ="Skills">skills</section>)
 };

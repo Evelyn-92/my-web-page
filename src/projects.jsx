@@ -1,5 +1,5 @@
 import React from "react";
 
 export const Projects = () => {
-  return <section id ="projects">projects</section>;
+  return <section id ="Projects">projects</section>;
 };

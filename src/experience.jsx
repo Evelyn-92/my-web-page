@@ -2,6 +2,6 @@ import React from "react";
 
 export const Experience = () => {
   return (
-  <section id ="experience">experience</section>
+  <section id ="Experience">experience</section>
   )
 }

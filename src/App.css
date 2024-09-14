@@ -98,28 +98,28 @@ section {
   color: var(--whiteColor);
 }
 
-#evelyn {
+#Evelyn {
   height: calc(100vh - 6rem);
   background-color: var(--lightBlue-color);
 }
 
-#contact {
+#Contact {
   background-color: var(--orange-color);
 }
 
-#interests {
+#Interests {
   background-color: var(--yellowGreen-color);
 }
 
-#skills {
+#Skills {
   background-color: var(--green-color);
 }
 
-#projects {
+#Projects {
   background-color: var(--yellowGreen-color);
 }
 
-#experience {
+#Experience {
   background-color: var(--orange-color);
 }
 
